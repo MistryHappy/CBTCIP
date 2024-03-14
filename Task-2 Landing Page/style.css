@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 0 2%;
+    position: relative;
+}
+.header nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px ;
+}
+.header nav img{
+    width: 300px;
+    height: 100px;
+}
+.header nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+.header nav ul li a{
+    color: #fff;
+    padding: 0 10px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.header nav ul li a:hover{
+    color: #ff3e3b;
+}
+.text-box{
+    padding: 0 2%;
+    margin-top: 10%;
+    font-size: 22px;
+}
+.text-box h1{
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 75px;
+    margin-bottom: 10px;
+}
+.text-box .btn{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 30px;
+    background: #ff3e3b;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.download{
+    position: absolute;
+    right: 3%;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    animation: move 2s linear infinite;
+    transition: background 0.3s;
+}
+.download img{
+    width: 20px;
+    margin-left: 10px;
+}
+@keyframes move{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.download:hover{
+    background: #ff3e3b;
+    border-radius: 15px;
+}
